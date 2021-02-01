@@ -7,6 +7,15 @@ nav {
   align-items: center;
   min-height: 8vh;
   background-color: white;
+
+  .logo{
+    min-width: 200px;
+    min-height: auto;
+    width: 25vw;
+    height: auto;
+    margin-left: -25px;
+
+  }
 }
 
 .nav-links {
@@ -29,13 +38,16 @@ nav {
 
 .burger {
   display: none;
+  border: 1px solid $color-orange;
+  border-radius: 50%;
+  padding: 10px;
 
   div {
-    width: 25px;
-    height: 3px;
-    margin: 5px;
+    width: 15px;
+    height: 2px;
+    margin: 2px;
     transition: all 0.3s ease;
-    background-color: orange;
+    background-color: $color-orange;
   }
 }
 
@@ -70,26 +82,15 @@ nav {
 .nav-active {
   transform: translateX(0%);
 }
+
+
+
 @keyframes navLinkFade {
   from {
     opacity: 0;
-    transform: translateX(0);
   }
 
   to {
     opacity: 1;
-    transform: translateX(0);
   }
-}
-
-.toggle .line1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.toggle .line2 {
-  opacity: 0;
-}
-
-.toggle .line3 {
-  transform: rotate(45deg) translate(-5px, -6px);
 }

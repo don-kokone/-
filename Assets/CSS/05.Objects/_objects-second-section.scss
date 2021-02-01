@@ -1,0 +1,21 @@
+.o-second-section{
+  margin: 0 10px;
+
+  h1{
+    color: $color-blue;
+  }
+  img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 100px;
+    min-height: auto;
+    width: 50vw;
+    height: auto;
+  }
+  p{
+    color: $color-grey;
+    line-height: 1.5;
+    text-align: justify;
+  }
+}
