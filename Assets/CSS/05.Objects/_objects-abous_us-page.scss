@@ -1,0 +1,47 @@
+.o-abous_us-page {
+  p {
+    margin: 10px;
+  }
+
+  .o-abous_us-page__main-article {
+    padding-bottom: 40px;
+
+    h1 {
+      color: $color-orange;
+      margin: 10px;
+    }
+
+    h4 {
+      color: $color-blue;
+      margin: 10px;
+    }
+  }
+
+  .o-abous_us-page__secondary-article {
+    border-top: 1px solid $color-grey;
+    padding-top: 40px;
+
+    h2 {
+      color: $color-blue;
+    }
+
+    .img-prize {
+      display: block;
+      min-width: 100px;
+      width: 50vw;
+      height: auto;
+      border-radius: 50%;
+      border: 1px solid $color-orange;
+      padding: 4px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .img-smiling-girl {
+      display: block;
+      min-width: 100px;
+      width: 100vw;
+      height: auto;
+    }
+  }
+}
