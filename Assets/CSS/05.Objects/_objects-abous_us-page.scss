@@ -23,9 +23,10 @@
 
     h2 {
       color: $color-blue;
+      margin: 10px;
     }
 
-    .img-prize {
+    .o-abous_us-page__secondary-article--img-prize {
       display: block;
       min-width: 100px;
       width: 50vw;
@@ -36,12 +37,25 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .o-abous_us-page__secondary-article--text-over-img {
 
-    .img-smiling-girl {
-      display: block;
-      min-width: 100px;
-      width: 100vw;
-      height: auto;
+      .o-abous_us-page__secondary-article--img-smiling-girl {
+        display: block;
+        min-width: 300px;
+        width: 100vw;
+        height: auto;
+      }
+
+      .text-box {
+
+          position: absolute;
+          color: $color-orange;
+          text-align: center;
+          top:2650px;
+
+      }
     }
   }
+
+
 }
