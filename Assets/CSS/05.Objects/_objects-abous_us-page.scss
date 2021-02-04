@@ -1,19 +1,13 @@
 .o-abous_us-page {
-  p {
-    margin: 10px;
-  }
+
 
   .o-abous_us-page__main-article {
     padding-bottom: 40px;
 
-    h1 {
-      color: $color-orange;
-      margin: 10px;
-    }
 
     h4 {
       color: $color-blue;
-      margin: 10px;
+
     }
   }
 
@@ -23,7 +17,7 @@
 
     h2 {
       color: $color-blue;
-      margin: 10px;
+
     }
 
     .o-abous_us-page__secondary-article--img-prize {
@@ -39,6 +33,8 @@
     }
     .o-abous_us-page__secondary-article--text-over-img {
 
+      position: relative;
+
       .o-abous_us-page__secondary-article--img-smiling-girl {
         display: block;
         min-width: 300px;
@@ -51,7 +47,8 @@
           position: absolute;
           color: $color-orange;
           text-align: center;
-          top:2650px;
+          top:-20px;
+
 
       }
     }
