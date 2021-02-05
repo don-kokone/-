@@ -1,13 +1,9 @@
 .o-abous_us-page {
-
-
   .o-abous_us-page__main-article {
     padding-bottom: 40px;
 
-
     h4 {
       color: $color-blue;
-
     }
   }
 
@@ -17,13 +13,12 @@
 
     h2 {
       color: $color-blue;
-
     }
 
     .o-abous_us-page__secondary-article--img-prize {
       display: block;
       min-width: 100px;
-      width: 50vw;
+      max-width: 200px;
       height: auto;
       border-radius: 50%;
       border: 1px solid $color-orange;
@@ -31,8 +26,8 @@
       margin-left: auto;
       margin-right: auto;
     }
-    .o-abous_us-page__secondary-article--text-over-img {
 
+    .o-abous_us-page__secondary-article--text-over-img {
       position: relative;
 
       .o-abous_us-page__secondary-article--img-smiling-girl {
@@ -40,19 +35,29 @@
         min-width: 300px;
         width: 100vw;
         height: auto;
+        z-index: 1;
       }
 
       .text-box {
-
-          position: absolute;
-          color: $color-orange;
-          text-align: center;
-          top:-20px;
-
-
+        position: absolute;
+        color: $color-orange;
+        text-align: center;
+        top: -20px;
       }
     }
   }
+}
+@media only screen and (min-width: 991px) {
 
-
+  .o-abous_us-page__secondary-article--img-prize{
+    max-width: 200px;
+    height: auto;
+    padding: 4px;
+  }
+  .o-home-page__secondary-article {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-row: 1fr;
+    align-items: center;
+  }
 }

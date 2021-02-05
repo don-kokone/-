@@ -1,31 +1,44 @@
 .o-home-page {
-
-
   img {
     min-width: 300px;
     width: 100vw;
     height: auto;
     margin: 0;
-
   }
 }
 
-.o-second-section{
+.o-home-page__secondary-article {
   margin: 0 10px;
 
-  h1{
+  h1 {
     color: $color-blue;
   }
-  img{
+
+  img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    min-width: 100px;
+    min-width: 150px;
+    max-width: 200px;
+    width: 100%;
     min-height: auto;
-    width: 50vw;
     height: auto;
   }
-  p{
+
+  p {
     line-height: 1.5;
+  }
+}
+@media only screen and (min-width: 991px) {
+
+
+
+  .o-abous_us-page__secondary-article-grid{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-row: 1fr;
+    align-items:center;
+
+
   }
 }

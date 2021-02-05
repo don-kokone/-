@@ -1,5 +1,23 @@
-.o-our_services-page__main-article{
+.o-our_services-page__secondary-article--colorful-div {
+  background-color: #333333;
+  width: 100vw;
+  text-align: center;
+  padding: 40px 0;
+
+  h2 {
+    color: white;
+  }
+
+  a {
+    border: 2px solid $color-orange;
+    border-radius: 5%;
+    color: $color-orange;
+    padding: 10px;
 
 
-
+    &:hover {
+      background-color: $color-orange;
+      color: white;
+    }
+  }
 }
