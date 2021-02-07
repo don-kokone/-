@@ -2,17 +2,9 @@
   .o-abous_us-page__main-article {
     padding-bottom: 40px;
 
-    h4 {
-      color: $color-blue;
-    }
-  }
-
-  .o-abous_us-page__secondary-article {
-    border-top: 1px solid $color-grey;
-    padding-top: 40px;
-
-    h2 {
-      color: $color-blue;
+    .o-abous_us-page__secondary-article-grid {
+      border-top: 1px solid $color-grey;
+      padding-top:40px;
     }
 
     .o-abous_us-page__secondary-article--img-prize {
@@ -26,6 +18,9 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  .o-abous_us-page__secondary-article {
 
     .o-abous_us-page__secondary-article--text-over-img {
       position: relative;
@@ -34,8 +29,11 @@
         display: block;
         min-width: 300px;
         width: 100vw;
-        height: auto;
+        height: 45vh;
         z-index: 1;
+        object-fit: cover;
+        object-position: 0 60%;
+
       }
 
       .text-box {
@@ -48,16 +46,19 @@
   }
 }
 @media only screen and (min-width: 991px) {
-
-  .o-abous_us-page__secondary-article--img-prize{
-    max-width: 200px;
-    height: auto;
-    padding: 4px;
+  .o-abous_us-page__main-article {
+    width: 90%;
+    margin: 0 auto;
   }
-  .o-home-page__secondary-article {
+
+  .o-abous_us-page__secondary-article-grid {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-row: 1fr;
+
     align-items: center;
+  }
+
+  .o-abous_us-page__secondary-article--img-prize {
+    max-width: 200px;
   }
 }

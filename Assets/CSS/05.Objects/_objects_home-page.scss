@@ -2,8 +2,9 @@
   img {
     min-width: 300px;
     width: 100vw;
-    height: auto;
-    margin: 0;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 0% 50%;
   }
 }
 
@@ -31,14 +32,13 @@
 }
 @media only screen and (min-width: 991px) {
 
-
-
-  .o-abous_us-page__secondary-article-grid{
+  .o-home-page__secondary-article {
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-row: 1fr;
-    align-items:center;
-
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
 
   }
 }
