@@ -2,18 +2,22 @@
 @import "./Assets/CSS/01.Settings/_settings-colors";
 @import "./Assets/CSS/01.Settings/_settings-fonts";
 
+@import "./Assets/CSS/02.Tools/tools-mixins" ;
+
 @import './Assets/CSS/04.Elements/_elements-links';
 @import "./Assets/CSS/04.Elements/_elements-paragaphs";
 @import "./Assets/CSS/04.Elements/_elements-lists";
 @import "./Assets/CSS/04.Elements/_elements-headings";
 @import "./Assets/CSS/04.Elements/_elements-images";
-@import "./Assets/CSS/04.Elements/_elements-body";
+
 
 @import './Assets/CSS/05.Objects/_objects_main-nav';
-@import "./Assets/CSS/05.Objects/_objects_home-page";
-@import "./Assets/CSS/05.Objects/_objects-abous_us-page";
-@import "./Assets/CSS/05.Objects/_objects-our_services-page";
 
 @import "./Assets/CSS/06.Components/_components-card";
 
 @import "./Assets/CSS/07.Utilities/_utilities-margin";
+
+@import "./Assets/CSS/Pages/1_home-page";
+@import "./Assets/CSS/Pages/2_abous_us-page";
+@import "./Assets/CSS/Pages/3_our_services-page";
+@import "./Assets/CSS/Pages/7_contact-page";

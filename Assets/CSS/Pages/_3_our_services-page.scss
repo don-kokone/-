@@ -1,0 +1,31 @@
+.o-our_services-page__secondary-article--colorful-div {
+  background-color: #333333;
+  width: 100vw;
+  text-align: center;
+  padding: 40px 0;
+
+  h2 {
+    color: white;
+  }
+
+  a {
+    border: 2px solid $color-orange;
+    border-radius: 5%;
+    color: $color-orange;
+    padding: 10px;
+
+
+    &:hover {
+      background-color: $color-orange;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 991px) {
+
+  .o-our_services-page__main-article {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

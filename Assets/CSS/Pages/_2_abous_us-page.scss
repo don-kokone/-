@@ -1,0 +1,70 @@
+.o-abous_us-page {
+
+  .o-abous_us-page__main-article {
+    padding-bottom: 40px;
+
+    .o-abous_us-page__secondary-article-grid {
+      border-top: 1px solid $color-grey;
+      padding-top:40px;
+    }
+
+    .o-abous_us-page__secondary-article--img-prize {
+      display: block;
+      min-width: 100px;
+      max-width: 200px;
+      height: auto;
+      border-radius: 50%;
+      border: 1px solid $color-orange;
+      padding: 4px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .o-abous_us-page__secondary-article {
+
+    .o-abous_us-page__secondary-article--text-over-img {
+      position: relative;
+
+      .o-abous_us-page__secondary-article--img-smiling-girl {
+        display: block;
+        min-width: 300px;
+        width: 100vw;
+        height: 45vh;
+        z-index: 1;
+        object-fit: cover;
+        object-position: 0 60%;
+        position: relative;
+        z-index: 1;
+
+
+      }
+
+      .text-box {
+        position: absolute;
+        color: $color-orange;
+        text-align: center;
+        top:0;
+        z-index: 2;
+
+      }
+    }
+  }
+}
+@media only screen and (min-width: 991px) {
+  .o-abous_us-page__main-article {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .o-abous_us-page__secondary-article-grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    align-items: center;
+  }
+
+  .o-abous_us-page__secondary-article--img-prize {
+    max-width: 200px;
+  }
+}

@@ -1,0 +1,48 @@
+.contact-page {
+    @include flex-column;
+    flex: 1 1 auto;
+    
+
+    &__info {
+        flex-wrap: wrap;
+    }
+
+    .appointment-form {
+        @include flex-column;
+        flex: 1 1 auto;
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+  
+      
+        label {
+            margin-top: 1rem;
+            margin-bottom: 0.2rem;
+            color: $color-darker-grey;
+        }
+
+        input {
+            background-color: $color-light-grey;
+            border: none;
+            border-radius: 2px;
+            padding: 0.7rem;
+
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+        button{
+            width: fit-content;
+            margin: 1rem auto;
+            padding: 0.7rem 1.2rem ;
+            color: $color-light-grey;
+            background-color: $color-orange;
+            border: none;
+            border-radius: 5px;
+            text-transform: uppercase;
+            font-weight: bolder;
+        }
+    }
+}

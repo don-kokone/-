@@ -1,0 +1,26 @@
+.o-home-page {
+  &__main-article-image {
+    min-width: 300px;
+    width: 100vw;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 0 50%;
+  }
+}
+
+.o-home-page__secondary-article-image {
+  margin: 0 auto;
+  min-width: 150px;
+  max-width: 70%; 
+}
+
+@media only screen and (min-width: 991px) {
+  .o-home-page__secondary-article {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
