@@ -1,24 +1,20 @@
 .o-our_services-page__secondary-article--colorful-div {
   background-color: #333333;
-  width: 100vw;
   text-align: center;
   padding: 40px 0;
 
   h2 {
     color: white;
+    margin-bottom: 2rem;
   }
 
   a {
-    border: 2px solid $color-orange;
-    border-radius: 5%;
-    color: $color-orange;
-    padding: 10px;
+    background-color: $color-orange;
+    color: $color-white;
+    padding: 0.8rem 1rem ;
+    text-transform: uppercase;
+    font-size: 0.8rem;
 
-
-    &:hover {
-      background-color: $color-orange;
-      color: white;
-    }
   }
 }
 

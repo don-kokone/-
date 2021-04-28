@@ -1,0 +1,43 @@
+.o-img-panel {
+    display: block;
+    min-width: 300px;
+    height: 45vh;
+    object-fit: cover;
+    object-position: 0 60%;
+    position: relative;
+
+
+    .o-img-panel__text-box {
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        z-index: 2;
+
+        &--main,
+        &--secondary {
+            text-align: center;
+            text-transform: uppercase;
+     
+        }
+
+        &--main{
+            color: $color-orange;
+            font-size: 6vw;
+            font-weight: bolder;
+        }
+
+        &--secondary{
+            font-size: 4vw;
+            font-weight: bold;
+            color: $color-white;
+            margin-top: 1.5rem;
+        }
+    }
+
+
+    .o-img-panel__text-box {
+        z-index: 1;
+        height: 45%;
+        width: 100%;
+    }
+}

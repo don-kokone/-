@@ -1,6 +1,7 @@
 .contact-page {
     @include flex-column;
     flex: 1 1 auto;
+    margin-bottom: 2rem;
     
 
     &__info {
@@ -16,6 +17,7 @@
   
       
         label {
+            text-align: left;
             margin-top: 1rem;
             margin-bottom: 0.2rem;
             color: $color-darker-grey;
