@@ -2,20 +2,36 @@
     @include flex-column;
     flex: 1 1 auto;
     margin-bottom: 2rem;
-    
+    padding-left: 5%;
+    padding-right: 5%;
 
-    &__info {
-        flex-wrap: wrap;
+   .contact-page__map {
+        height: 70%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .coordinates {
+        margin-top: 2rem;
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        span {
+            font-weight: bolder;
+        }
+
+        address {
+            font-style: normal;
+        }
     }
 
     .appointment-form {
         @include flex-column;
         flex: 1 1 auto;
-        margin-left: 5%;
-        margin-right: 5%;
-        width: 90%;
-  
-      
+
         label {
             text-align: left;
             margin-top: 1rem;
@@ -23,22 +39,22 @@
             color: $color-darker-grey;
         }
 
-        input {
+        input, textarea {
             background-color: $color-light-grey;
             border: none;
             border-radius: 2px;
             padding: 0.7rem;
-
         }
 
-        input:focus{
+  
+        input:focus {
             outline: none;
         }
 
-        button{
+        button {
             width: fit-content;
             margin: 1rem auto;
-            padding: 0.7rem 1.2rem ;
+            padding: 0.7rem 1.2rem;
             color: $color-light-grey;
             background-color: $color-orange;
             border: none;

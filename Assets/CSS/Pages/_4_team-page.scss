@@ -1,0 +1,14 @@
+@media only screen and (min-width: 700px) {
+    .team {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+
+        .c-card{
+            max-width: 20rem;
+            margin: 1rem;
+        }
+    }
+}

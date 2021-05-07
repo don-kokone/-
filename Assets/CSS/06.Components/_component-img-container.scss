@@ -1,0 +1,22 @@
+.c-img-container{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0;
+
+    &__line{
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        height: 1px;
+        background-color: $color-grey;
+        opacity: 0.3;
+    }
+
+    a{
+        color: $color-orange;
+        text-transform: capitalize;
+
+        .fa-chevron-right{
+            font-size: 0.8rem;
+        }
+    }
+}

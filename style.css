@@ -7,11 +7,10 @@
 
 body {
   font-family: 'Roboto Slab', serif;
-  font-size: 100%;
+  font-size: 110%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
-  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -35,6 +34,7 @@ p {
   text-align: justify;
   line-height: 1.5;
   margin: 0 auto;
+  width: 100%;
 }
 
 li {
@@ -50,9 +50,10 @@ h1, h2 {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   color: #ed682e;
   text-align: left;
+  font-weight: 300;
 }
 
 h2 {
@@ -66,8 +67,11 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #1a4485;
+  font-weight: 400;
+  text-align: left;
+  margin: 0.4rem 0;
 }
 
 img {
@@ -258,8 +262,8 @@ nav .logo {
   border: 1px solid #ed682e;
   padding: 2px;
   border-radius: 5px;
-  width: 13.2rem;
-  height: 13.2rem;
+  max-width: 300px;
+  max-height: 300px;
 }
 
 .c-card__heading {
@@ -281,6 +285,29 @@ nav .logo {
   width: 100%;
   text-align: center;
   padding: 2rem 0;
+}
+
+.c-img-container {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 0;
+}
+
+.c-img-container__line {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  height: 1px;
+  background-color: #a4a4a4;
+  opacity: 0.3;
+}
+
+.c-img-container a {
+  color: #ed682e;
+  text-transform: capitalize;
+}
+
+.c-img-container a .fa-chevron-right {
+  font-size: 0.8rem;
 }
 
 .u-margin--standart {
@@ -396,6 +423,30 @@ nav .logo {
   }
 }
 
+@media only screen and (min-width: 700px) {
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .team .c-card {
+    max-width: 20rem;
+    margin: 1rem;
+  }
+}
+
 .contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,11 +459,32 @@ nav .logo {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   margin-bottom: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.contact-page__info {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.contact-page .contact-page__map {
+  height: 70%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-page .coordinates {
+  margin-top: 2rem;
+}
+
+.contact-page .coordinates h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.contact-page .coordinates span {
+  font-weight: bolder;
+}
+
+.contact-page .coordinates address {
+  font-style: normal;
 }
 
 .contact-page .appointment-form {
@@ -426,9 +498,6 @@ nav .logo {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  margin-left: 5%;
-  margin-right: 5%;
-  width: 90%;
 }
 
 .contact-page .appointment-form label {
@@ -438,7 +507,7 @@ nav .logo {
   color: #555;
 }
 
-.contact-page .appointment-form input {
+.contact-page .appointment-form input, .contact-page .appointment-form textarea {
   background-color: #F5F6F9;
   border: none;
   border-radius: 2px;
