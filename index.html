@@ -44,10 +44,28 @@
 
         <img class="o-home-page__main-article-image" src="http://www.onedentalvietnam.com/img/pictures/bkg-dentist.jpg"
           alt="">
-        <div class="text">
+
+          <i class="fas fa-chevron-left"></i>
+          <i class="fas fa-chevron-right"></i>
+
+        <div class="text visible">
           <h2>We Care About Your Smile</h2>
           <p>Stop covering your smile and move forward with a beautiful and fresh smile you can be proud of!</p>
+          
         </div>
+
+        <div class="text">
+          <h2>Welcome to One Dental Clinic</h2>
+          <p>Visit to your dental hygienist, is a winning formula for healthy teeth and smile for the entire family.</p>
+         
+        </div>
+
+        <div class="text ">
+          <h2>We Care About Your Smile</h2>
+          <p>Are you self-conscious about your smile? Talk to us about cosmetic options and embrace life with happiness and well-being.</p>
+          
+        </div>
+        <a class="c-appointment-btn btn" href="#">Book an appointment</a>
 
       </article>
 
@@ -145,7 +163,7 @@
         <div class="o-our_services-page__secondary-article--colorful-div">
 
           <h2>Make an appointment with us today!</h2>
-          <a href="#">Book an appointment</a>
+          <a class="c-appointment-btn" href="#">Book an appointment</a>
         </div>
       </article>
     </section>
@@ -418,9 +436,9 @@
         </div>
       </article>
 
-      <article class="">
+      <article class="testimonialContainer">
         <h1>WHAT OUR PATIENTS SAY</h1>
-        <p>I'd like to highly recommend One Dental Clinic.
+        <p class="testimonial">I'd like to highly recommend One Dental Clinic.
           Our family has been there multiple times and it
           has never disappointed. We've always had great experiences
           with Dr. Pinto, he's amazing with children.
@@ -428,18 +446,18 @@
           off that fear. He is now her favorite dentist! The atmosphere
           at the clinic is pleasant, the staff is friendly, from
           the reception to the nurses.</p>
-        <p>-Kamila</p>
+        <p class="username">-Kamila</p>
       </article>
     </section>
 
     <section class="contact-page">
       <h1>WE AWAIT YOU WITH A SMILE!</h1>
 
-      
-        <iframe class="contact-page__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7437.116401455386!2d8.441050828082169!3d24.8780139467673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x122fb2f52b358a77%3A0xcf4b1948695a07ec!2sMosqu%C3%A9e%20imam%20Malek!5e1!3m2!1sbg!2sbg!4v1616246377722!5m2!1sbg!2sbg"
-          width="auto" height="auto" style="border:0;" loading="lazy"></iframe>
- 
+
+      <iframe class="contact-page__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7437.116401455386!2d8.441050828082169!3d24.8780139467673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x122fb2f52b358a77%3A0xcf4b1948695a07ec!2sMosqu%C3%A9e%20imam%20Malek!5e1!3m2!1sbg!2sbg!4v1616246377722!5m2!1sbg!2sbg"
+        width="auto" height="auto" style="border:0;" loading="lazy"></iframe>
+
 
       <article class="contact-page__info">
 
@@ -456,16 +474,16 @@
           <h4>WE ARE HERE FOR YOU</h4>
           <address>
             <p> <a href="mailto:webmaster@example.com">webmaster@example.com</a> </p>
-            <p> <span>Tel:</span>  +84 24 3718 6168</p>
+            <p> <span>Tel:</span> +84 24 3718 6168</p>
             <p> <span>Mobile:</span> 0796396688</p>
           </address>
         </div>
 
         <div class="coordinates">
           <h4>OUR OFFICE HOURS</h4>
-          <p> <span>Monday- Friday: </span>   <time>8:30</time> to <time>17:30</time> </p>
-          <p> <span>Saturday:</span>  <time>9:00</time> to <time>17:30</time> </p>
-          <p> <span>Sunday:</span>  Closed</p>
+          <p> <span>Monday- Friday: </span> <time>8:30</time> to <time>17:30</time> </p>
+          <p> <span>Saturday:</span> <time>9:00</time> to <time>17:30</time> </p>
+          <p> <span>Sunday:</span> Closed</p>
         </div>
       </article>
 
@@ -483,9 +501,9 @@
           <label for="mail">Email address</label>
           <input type="email" name="mail">
 
-          <label >Message</label>
+          <label>Message</label>
           <textarea cols="30" rows="7"></textarea>
-          
+
 
           <button>Send message</button>
         </form>
@@ -501,6 +519,8 @@
   <script type="text/javascript" src="./Assets/Javascript/burger-menu-script.js">
 
   </script>
+
+  <script src="./Assets/Javascript/testimonials.js"></script>
 </body>
 
 </html>
