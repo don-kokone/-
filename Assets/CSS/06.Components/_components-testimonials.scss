@@ -1,0 +1,31 @@
+.c-testimonialContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-darker-grey;
+    color: $color-white;
+    height: auto;
+    padding: 0 5%;
+
+
+    h1 {
+        display: block;
+        top: 0;
+        left: auto;
+    }
+
+    h1,
+    &__testimonial,
+    &__user {
+        text-align: center;
+        margin-bottom: 2rem;
+
+    }
+
+    &__testimonial{
+        font-style: italic;
+    }
+
+}
