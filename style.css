@@ -238,6 +238,77 @@ nav .logo {
   width: 100%;
 }
 
+.service-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 95vw;
+}
+
+.service-container .service-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #a4a4a4;
+  margin: 0 2rem 0 0;
+}
+
+.service-container .service {
+  background-color: transparent;
+  border: 1px solid #F5F6F9;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  margin-top: 0;
+}
+
+.service-container .service-text {
+  display: none;
+  margin: 2rem 0 0;
+}
+
+.service-container .service.active .service-text {
+  display: block;
+  margin: 1rem 0 0;
+}
+
+.service-container .service-toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.service-container .service-toggle:focus {
+  outline: 0;
+}
+
+.service-container .service-toggle .fa-times {
+  display: none;
+}
+
+.service-container .service.active .service-toggle .fa-times {
+  display: block;
+}
+
+.service-container .service.active .service-toggle .fa-chevron-down {
+  display: none;
+}
+
 .c-card {
   display: -webkit-box;
   display: -ms-flexbox;
