@@ -29,8 +29,6 @@ p {
   color: #a4a4a4;
   text-align: justify;
   line-height: 1.5;
-  margin: 0 auto;
-  width: 100%;
 }
 
 li {
@@ -428,7 +426,12 @@ nav .logo {
   margin-right: 0.6rem;
 }
 
-.o-home-page__main-article {
+.o-home-page p {
+  width: 90%;
+  padding: 5% 0;
+}
+
+.o-home-page .o-home-page__main-article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -440,7 +443,7 @@ nav .logo {
   margin-top: 2rem;
 }
 
-.o-home-page__main-article::before {
+.o-home-page .o-home-page__main-article::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -452,24 +455,7 @@ nav .logo {
   height: 100%;
 }
 
-.o-home-page__main-article .fa-chevron-right, .o-home-page__main-article .fa-chevron-left {
-  position: absolute;
-  font-size: 1rem;
-  color: white;
-  z-index: 10;
-}
-
-.o-home-page__main-article .fa-chevron-right {
-  top: 50%;
-  right: 0;
-}
-
-.o-home-page__main-article .fa-chevron-left {
-  top: 50%;
-  left: 0;
-}
-
-.o-home-page__main-article-image {
+.o-home-page .o-home-page__main-article-image {
   position: relative;
   height: 60vh;
   -o-object-fit: cover;
@@ -478,16 +464,18 @@ nav .logo {
   text-align: center;
 }
 
-.o-home-page__main-article .c-appointment-btn {
-  position: relative;
-  z-index: 10;
+.o-home-page .o-home-page__main-article .c-appointment-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 6;
+  width: 15rem;
 }
 
-.o-home-page__main-article .text {
-  display: none;
-}
-
-.o-home-page__main-article .text.visible {
+.o-home-page .o-home-page__main-article .c-testimonialContainer {
+  background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -508,8 +496,8 @@ nav .logo {
   overflow-x: hidden;
 }
 
-.o-home-page__main-article .text.visible h2,
-.o-home-page__main-article .text.visible p {
+.o-home-page .o-home-page__main-article .c-testimonialContainer h2,
+.o-home-page .o-home-page__main-article .c-testimonialContainer p {
   color: white;
   text-align: center;
   margin: 1rem 0;
@@ -534,6 +522,11 @@ nav .logo {
             align-items: center;
     margin: 0 auto;
   }
+}
+
+.o-abous_us-page p {
+  width: 90%;
+  padding: 0 5%;
 }
 
 .o-abous_us-page .o-abous_us-page__main-article {
@@ -588,6 +581,15 @@ nav .logo {
   }
 }
 
+.o-our_services-page__main-article p:last-child {
+  margin: 1rem 0 2rem 0;
+  color: #1a4485;
+}
+
+.panel-group {
+  margin-bottom: 2rem;
+}
+
 .o-our_services-page__secondary-article--colorful-div {
   background-color: #333333;
   text-align: center;
@@ -604,6 +606,11 @@ nav .logo {
     width: 90%;
     margin: 0 auto;
   }
+}
+
+.team-page p {
+  width: 90%;
+  padding: 5% 0;
 }
 
 @media only screen and (min-width: 700px) {

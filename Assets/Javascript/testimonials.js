@@ -25,7 +25,7 @@ const testimonials = [
     }
 ]
 
-let index = 1
+let i = 1
 
 function updateTestimonial() {
     const { text, name } = testimonials[index]
@@ -33,10 +33,10 @@ function updateTestimonial() {
     testimonial.innerHTML = text
     user.innerHTML = name
 
-    index++
+    i++
 
-    if (index > testimonials.length - 1) {
-        index = 0
+    if (i > testimonials.length - 1) {
+        i = 0
     }
 }
 

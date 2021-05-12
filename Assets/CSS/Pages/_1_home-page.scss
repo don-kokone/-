@@ -1,3 +1,11 @@
+.o-home-page{
+
+  p{
+    width: 90%;
+    padding: 5% 0;
+  }
+
+
 .o-home-page__main-article {
   display: flex;
   flex-direction: column;
@@ -17,23 +25,7 @@
 
   }
 
-  .fa-chevron-right, .fa-chevron-left{
-    position: absolute;
-    font-size: 1rem;
-    color: $color-white;
-    z-index: 10;
-
-  }
-
-  .fa-chevron-right{
-    top: 50%;
-    right: 0;
-  }
-
-  .fa-chevron-left{
-    top: 50%;
-    left: 0;
-  }
+  
   &-image {
     position: relative;
     height: 60vh;
@@ -44,17 +36,20 @@
   }
 
 
-
   .c-appointment-btn {
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 6;
+    width: 15rem;
+
+
   }
 
-  .text {
-    display: none;
-  }
 
-  .text.visible {
+  .c-testimonialContainer {
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -78,7 +73,7 @@
   }
 
 }
-
+}
 
 
 .o-home-page__secondary-article-image {

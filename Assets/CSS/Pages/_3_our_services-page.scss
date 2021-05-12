@@ -1,3 +1,18 @@
+
+.o-our_services-page__main-article{
+  p:last-child{
+    margin: 1rem 0 2rem 0;
+    color: $color-blue;
+  }
+}
+
+
+
+.panel-group{
+  margin-bottom: 2rem;
+}
+
+
 .o-our_services-page__secondary-article--colorful-div {
   background-color: #333333;
   text-align: center;
@@ -7,6 +22,8 @@
     color: white;
     margin-bottom: 2rem;
   }
+
+  
 
 }
 
