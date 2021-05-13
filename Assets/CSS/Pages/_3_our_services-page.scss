@@ -1,5 +1,10 @@
 
 .o-our_services-page__main-article{
+
+  p{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   p:last-child{
     margin: 1rem 0 2rem 0;
     color: $color-blue;

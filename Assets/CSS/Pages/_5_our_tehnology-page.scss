@@ -1,0 +1,22 @@
+.our-tehnology-page__main-article{
+    p{
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+.o-img-panel::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $color-darker-grey;
+    z-index: 2;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.o-img-panel__text{
+z-index: 5;
+}

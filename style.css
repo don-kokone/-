@@ -197,19 +197,30 @@ nav .logo {
 .o-img-panel {
   display: block;
   min-width: 300px;
-  height: 45vh;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: 0 60%;
      object-position: 0 60%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .o-img-panel .o-img-panel__text-box {
   position: absolute;
-  top: 15vh;
-  left: 0;
-  z-index: 2;
+  text-align: center;
+  z-index: 3;
 }
 
 .o-img-panel .o-img-panel__text-box--main, .o-img-panel .o-img-panel__text-box--secondary {
@@ -219,20 +230,17 @@ nav .logo {
 
 .o-img-panel .o-img-panel__text-box--main {
   color: #ed682e;
-  font-size: 6vw;
   font-weight: bolder;
 }
 
 .o-img-panel .o-img-panel__text-box--secondary {
-  font-size: 4vw;
   font-weight: bold;
   color: white;
   margin-top: 1.5rem;
 }
 
-.o-img-panel .o-img-panel__text-box {
-  z-index: 1;
-  height: 45%;
+.o-img-panel__img {
+  height: auto;
   width: 100%;
 }
 
@@ -427,8 +435,8 @@ nav .logo {
 }
 
 .o-home-page p {
-  width: 90%;
-  padding: 5% 0;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .o-home-page .o-home-page__main-article {
@@ -524,9 +532,9 @@ nav .logo {
   }
 }
 
-.o-abous_us-page p {
-  width: 90%;
-  padding: 0 5%;
+.o-abous_us-page p, .o-abous_us-page h4, .o-abous_us-page li {
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .o-abous_us-page .o-abous_us-page__main-article {
@@ -581,6 +589,11 @@ nav .logo {
   }
 }
 
+.o-our_services-page__main-article p {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .o-our_services-page__main-article p:last-child {
   margin: 1rem 0 2rem 0;
   color: #1a4485;
@@ -608,9 +621,30 @@ nav .logo {
   }
 }
 
+.our-tehnology-page__main-article p {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.o-img-panel::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  z-index: 2;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+.o-img-panel__text {
+  z-index: 5;
+}
+
 .team-page p {
-  width: 90%;
-  padding: 5% 0;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 @media only screen and (min-width: 700px) {
