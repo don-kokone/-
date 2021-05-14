@@ -1,0 +1,52 @@
+.c-popup-container{
+    display: none;
+}
+
+.c-popup-container.visible{
+    border: 1px solid $color-darker-grey;
+    border-radius: 1rem;
+    padding: 0 5%;
+    display: block;
+    
+
+    &__header{
+        text-align: left;
+        line-height: 2;
+        border-bottom: 2px solid $color-light-grey;
+    }
+
+    &__body{
+
+        &--blue{
+            color: $color-blue;
+        }
+
+        &--blue:last-child{
+            text-align: center;
+        }
+    }
+
+    &__footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 2px solid $color-light-grey;
+
+        small, button{
+            margin: 1rem 0;
+        }
+
+        button{
+            outline: none;
+            border: none;
+            font-size: 0.8rem;
+        }
+
+        a{
+            text-transform: lowercase;
+        }
+
+    
+    }
+}

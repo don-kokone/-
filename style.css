@@ -429,6 +429,62 @@ nav .logo {
   font-style: italic;
 }
 
+.c-popup-container {
+  display: none;
+}
+
+.c-popup-container.visible {
+  border: 1px solid #555;
+  border-radius: 1rem;
+  padding: 0 5%;
+  display: block;
+}
+
+.c-popup-container.visible__header {
+  text-align: left;
+  line-height: 2;
+  border-bottom: 2px solid #F5F6F9;
+}
+
+.c-popup-container.visible__body--blue {
+  color: #1a4485;
+}
+
+.c-popup-container.visible__body--blue:last-child {
+  text-align: center;
+}
+
+.c-popup-container.visible__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 2px solid #F5F6F9;
+}
+
+.c-popup-container.visible__footer small, .c-popup-container.visible__footer button {
+  margin: 1rem 0;
+}
+
+.c-popup-container.visible__footer button {
+  outline: none;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.c-popup-container.visible__footer a {
+  text-transform: lowercase;
+}
+
 .u-margin--standart {
   margin-left: 0.6rem;
   margin-right: 0.6rem;
