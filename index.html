@@ -454,16 +454,15 @@
           <img src="http://www.onedentalvietnam.com/img/clinic/sirona-chair-main.jpg">
           <h4>Our Sirona Chair</h4>
           <p>Adding comfort and well-being to your One Dental experience...</p>
-          <p> <button onclick="myFunction()">click here</button><a href="#" >Read more here<i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUp()">Read more here<i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
 
-
-          <div class = "c-popup-container">
+          <!--Pop-up 1-->
+          <div class="c-popup-container">
             <div class="c-popup-container__header">
               <h4>Our Sirona Chair</h4>
             </div>
             <div class="c-popup-container__body">
-              
               <p class="c-popup-container__body--blue">Patient's comfort is our priority</p>
               <p>To make sure you feel as comfortable as possible, we provide you with anatomically designed headrests,
                 to
@@ -477,9 +476,9 @@
                 mouth while leaving your eyes from any discomfort.</p>
               <p class="c-popup-container__body--blue">We care about your serenity.</p>
             </div>
-            <div class="c-popup-container__footer"> 
+            <div class="c-popup-container__footer">
               <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
-              <button class="c-appointment-btn close-popup-button">Close</button>
+              <button onclick="closePopUp()" class="c-appointment-btn close-popup-button">Close</button>
             </div>
           </div>
 
@@ -490,46 +489,183 @@
           <img src="http://www.onedentalvietnam.com/img/clinic/scan-main.jpg">
           <h4>Digital X-Ray Technology</h4>
           <p>Sirona Orthophos XG Plus gives fast and accurate diagnosis...</p>
-          <p><a href="#">Read more <i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUpTwo()">Read more <i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
         </div>
+
+        <!--Pop-up 2-->
+
+        <div class="c-popup-container two">
+          <div class="c-popup-container__header">
+            <h4>Digital X-Ray Technology</h4>
+          </div>
+          <div class="c-popup-container__body">
+            <p>Digital x-ray technology gives fast and accurate diagnosis while producing only a fraction of the
+              radiation exposure of traditional x-rays. And all this comfortably positioned!</p>
+            <p class="c-popup-container__body--blue">Crystal clear!</p>
+            <p>Sirona Orthophos XG Plus offers more individual adjustments to the patient characteristics for higher
+              quality images. With automatic adaptation of the focal layer to the individual jaw size of each patient,
+              Sirona Orthophos XG Plus provides our dentist with clear images to increase diagnostic accuracy.</p>
+
+            <p class="c-popup-container__body--blue">We care about your awareness.</p>
+          </div>
+          <div class="c-popup-container__footer">
+            <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
+            <button onclick="closePopUpTwo()" class="c-appointment-btn close-popup-button">Close</button>
+          </div>
+        </div>
+
 
         <div class="c-img-container">
           <img src="http://www.onedentalvietnam.com/img/clinic/instrument-main.jpg">
           <h4>New Standards in Hygiene!</h4>
           <p>SIROPure offers dentists a completely new treatment concept...</p>
-          <p><a href="#">Read more <i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUpThree()">Read more <i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
+        </div>
+
+        <!--Pop-up 3-->
+
+        <div class="c-popup-container three">
+          <div class="c-popup-container__header">
+            <h4>New Standards in Hygiene!</h4>
+          </div>
+          <div class="c-popup-container__body">
+            <p>With our latest SIROPure handpieces, not even a single drop of oil can escape from the instrument’s head
+              and thus endangering your treatment.</p>
+            <p class="c-popup-container__body--blue">Only the best!</p>
+            <p>Bringing space age technology to our dental clinic.Because “no oil” means more hygiene and safety for
+              every treatment, there is no aerosol cloud in your mouth, no failures of high-speed due to instrument
+              maintenance errors. SIROPure high-speed handpieces reflect the highest quality standard in the field of
+              dental instruments.</p>
+            <p class="c-popup-container__body--blue">Titanium through and through!</p>
+            <p>SIROPure does not do things by halves. All three high-speed handpiece versions are made of solid
+              titanium. This means maximum treatment quality regarding ergonomics, lightweight design and hygiene. And
+              that something extra in style and exclusiveness is also bound to enthuse the staff of any practice.</p>
+            <p class="c-popup-container__body--blue">We care about your well-being.</p>
+          </div>
+          <div class="c-popup-container__footer">
+            <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
+            <button onclick="closePopUpThree()" class="c-appointment-btn close-popup-button">Close</button>
+          </div>
         </div>
 
         <div class="c-img-container">
           <img src="http://www.onedentalvietnam.com/img/clinic/autoclave-main.jpg" alt="">
           <h4>Optimum Sterilisation</h4>
           <p>Sirona’s DAC PROFESSIONAL is an autoclave which satisfies...</p>
-          <p><a href="#">Read more <i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUpFour()">Read more <i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
         </div>
+
+
+        <!--Pop-up 4-->
+
+        <div class="c-popup-container four">
+          <div class="c-popup-container__header">
+            <h4>Optimum Sterilization</h4>
+          </div>
+          <div class="c-popup-container__body">
+            <p>Sirona’s DAC PROFESSIONAL ensure complete steam penetration for optimal sterilization process. It's like
+              having new instruments each time. Nothing is good enough for your smile!</p>
+            <p class="c-popup-container__body--blue">For the highest medical requirements.</p>
+            <p>Sirona’s DAC PROFESSIONAL is an autoclave which satisfies the most demanding medical requirements. The
+              DAC PROFESSIONAL is classified according to “Class B” of the EN 13060 European norm for small
+              sterilisers.Because at One Dental Clinic, we take hygiene seriously; all instruments are sterilised
+              immediately after your treatment using international standards.</p>
+
+            <p class="c-popup-container__body--blue">We care about your health.</p>
+          </div>
+          <div class="c-popup-container__footer">
+            <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
+            <button onclick="closePopUpFour()" class="c-appointment-btn close-popup-button">Close</button>
+          </div>
+        </div>
+
+
 
         <div class="c-img-container">
           <img src="http://www.onedentalvietnam.com/img/clinic/picasso-laser-main.jpg">
           <h4>The Art of Laser Surgery</h4>
           <p>Soft tissue diode Picasso Lite laser provides a multitude of solutions...</p>
-          <p><a href="#">Read more <i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUpFive()">Read more <i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
+        </div>
+
+        <!--Pop-up 5-->
+
+        <div class="c-popup-container five">
+          <div class="c-popup-container__header">
+            <h4>The Art of Laser Surgery</h4>
+          </div>
+          <div class="c-popup-container__body">
+            <p>Soft tissue diode Picasso Lite laser provides a multitude of solutions and is the ideal alternative to
+              conventional surgical methods like the scalpel and electrocautery. One Dental Clinic is always looking out
+              for the best quality in care with the less amount of discomfort for their patients.</p>
+            <p class="c-popup-container__body--blue">Creating a smile masterpiece!</p>
+            <p>Some of the advantages are relatively bloodless surgical sites, the
+              capability of working around metal (implants, amalgam, gold, orthodontic brackets, etc.), less
+              post-surgical discomfort and pain, minimal swelling and scarring, minimal or no suturing, more predictable
+              tissue response, and greater precision. wWith this precise and innovative surgical method you can get an
+              affordable, comfortable, safe and outstanding dental surgeries that will leave you smiling.</p>
+
+            <p class="c-popup-container__body--blue">We care about your comfort.</p>
+          </div>
+          <div class="c-popup-container__footer">
+            <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
+            <button onclick="closePopUpFive()" class="c-appointment-btn close-popup-button">Close</button>
+          </div>
         </div>
 
         <div class="c-img-container">
           <img src="http://www.onedentalvietnam.com/img/clinic/intra-spin-main.jpg" alt="">
           <h4>Always Looking for New Innovation</h4>
           <p>L-PRF™ is a 3-D autogenous synthesis of Platelet Rich Fibrin derived from...</p>
-          <p><a href="#">Read more <i class="fas fa-chevron-right"></i> </a></p>
+          <p><a onclick="openPopUpSix()">Read more <i class="fas fa-chevron-right"></i> </a></p>
           <div class="c-img-container__line"> </div>
         </div>
 
+
+        <!--Pop-up 6-->
+
+        <div class="c-popup-container six">
+          <div class="c-popup-container__header">
+            <h4>Always Looking for New Innovation</h4>
+          </div>
+          <div class="c-popup-container__body">
+            <p>L-PRF™ is a 3-D autogenous synthesis of Platelet Rich Fibrin derived from the patient’s blood. A
+              simplified chair-side procedure results in the production of a thin, compressed layer of platelet rich
+              fibrin that is strong, flexible and fitting for suturing. This natural fibrin scaffold is abundant in
+              platelets, growth factors and cytokines that are derived from the leukocytes and blood platelets. The
+              presence of these proteins in the site has been reported to provide quick healing, specifically during the
+              critical first seven days after application. This combination stimulates more efficient cell transfer and
+              proliferation without chemical or bovine thrombin additives.</p>
+            <p class="c-popup-container__body--blue">Technology at it's best!</p>
+            <p>The advantages and use in oral surgery and periodontology include the following:
+            <ul>
+              <li>Bony defects</li>
+              <li>Alveolar ridge and Sinus augmentation</li>
+              <li>Extraction sockets</li>
+              <li>Defects in Palate</li>
+              <li>Maxillary and Mandibular bone atrophy</li>
+            </ul>
+            </p>
+            <p class="c-popup-container__body--blue">We care about your future.</p>
+          </div>
+          <div class="c-popup-container__footer">
+            <small>Images and text from <a href="www.sirona.com">www.sirona.com</a> </small>
+            <button onclick="closePopUpSix()" class="c-appointment-btn close-popup-button">Close</button>
+          </div>
+        </div>
+
+
+        <!--End pop-up-->
       </article>
+
+
+
       <article class="">
         <div class="o-img-panel ">
-
           <div class="o-img-panel__text-box">
             <p class="o-img-panel__text-box--main"> Radiate confidence with your beautiful smile!</p>
             <p class="o-img-panel__text-box--secondary">Smiling is living, take care of your oral hygiene!</p>

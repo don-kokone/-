@@ -433,28 +433,37 @@ nav .logo {
   display: none;
 }
 
-.c-popup-container.visible {
-  border: 1px solid #555;
+.visible.c-popup-container {
   border-radius: 1rem;
   padding: 0 5%;
   display: block;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  z-index: 10;
+  background-color: white;
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 5rem 6rem rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 0px 5rem 6rem rgba(0, 0, 0, 0.75);
+  overflow-y: scroll;
+  max-height: 96%;
 }
 
-.c-popup-container.visible__header {
+.visible.c-popup-container .c-popup-container__header {
   text-align: left;
   line-height: 2;
   border-bottom: 2px solid #F5F6F9;
 }
 
-.c-popup-container.visible__body--blue {
+.visible.c-popup-container .c-popup-container__body--blue {
   color: #1a4485;
 }
 
-.c-popup-container.visible__body--blue:last-child {
+.visible.c-popup-container .c-popup-container__body--blue:last-child {
   text-align: center;
 }
 
-.c-popup-container.visible__footer {
+.visible.c-popup-container .c-popup-container__footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,18 +480,24 @@ nav .logo {
   border-top: 2px solid #F5F6F9;
 }
 
-.c-popup-container.visible__footer small, .c-popup-container.visible__footer button {
+.visible.c-popup-container .c-popup-container__footer small,
+.visible.c-popup-container .c-popup-container__footer button {
   margin: 1rem 0;
 }
 
-.c-popup-container.visible__footer button {
+.visible.c-popup-container .c-popup-container__footer small {
+  color: #a4a4a4;
+}
+
+.visible.c-popup-container .c-popup-container__footer a {
+  text-transform: lowercase;
+  color: #ed682e;
+}
+
+.visible.c-popup-container .c-popup-container__footer button {
   outline: none;
   border: none;
   font-size: 0.8rem;
-}
-
-.c-popup-container.visible__footer a {
-  text-transform: lowercase;
 }
 
 .u-margin--standart {
