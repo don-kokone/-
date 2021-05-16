@@ -1,97 +1,56 @@
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.navigation {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
-  background-color: white;
-  z-index: 10;
+  height: 5rem;
+  padding-top: 1rem;
+  position: relative;
+  
 
-  .logo{
-    min-width: 12.5rem;
-    min-height: auto;
-    width: 25vw;
-    height: auto;
-    margin-left: -1.6rem;
-
+  .logo {
+    max-width: 60%;
+    max-height: auto;
   }
-}
+  button {
+    border: 2px solid $color-orange;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: white;
 
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 30%;
-
-  li {
-    list-style: none;
-  }
-
-  a {
-    letter-spacing: 3px;
-    font-weight: bold;
-    font-size: 14px;
-    //Изкустевено добавено от мен
-    border-bottom: 1px solid black;
-  }
-}
-
-.burger {
-  display: none;
-  border: 1px solid $color-orange;
-  border-radius: 50%;
-  padding: 10px;
-
-  div {
-    width: 15px;
-    height: 2px;
-    margin: 2px;
-    transition: all 0.3s ease;
-    background-color: $color-orange;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    overflow-x: hidden;
+    .fa-bars {
+      color: $color-orange;
+      font-size: 1rem;
+    }
   }
 
   .nav-links {
-    position: fixed;
-    right: 0;
-    height: 92vh;
-    top: 8vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: $color-white;
+    position: absolute;
+    top: 5rem;
+    left: -70rem;
+    z-index: 10;
     width: 100%;
-    transform: translateX(50%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .nav-links li {
-    opacity: 0;
-  }
-
-  .burger {
-    display: block;
-    cursor: pointer;
+    height: 60vh;
+    transform: translateX(-70rem);
+    transition: all 1s ease-out;
   }
 }
 
-.nav-active {
-  transform: translateX(0%);
-}
 
+.nav-links.active{
 
-
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+  transform: translateX(70rem);
+ transition: all 1s ease-in;
+ 
+ 
+    li{
+      list-style: none;
+      margin-top: 1rem;
+      border-bottom: 1px solid $color-orange;
+      padding: 0;
+    }
+  
 }

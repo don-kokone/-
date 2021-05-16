@@ -9,6 +9,8 @@
 .o-home-page__main-article {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   margin-top: 2rem;
 
@@ -55,8 +57,10 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 10%;
-    left: 0;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    width: 100%;
     z-index: 6;
     overflow-x: hidden;
 
