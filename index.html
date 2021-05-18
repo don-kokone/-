@@ -11,23 +11,25 @@
 </head>
 
 <body>
-  <header>
+  <header class="c-header">
+  
     <nav class="navigation">
       <img class="logo" src="http://www.onedentalvietnam.com/img/logo-dental.png" alt="OneDentalClinic logo">
 
       
       <ul id="navigation" class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-us">About Us</a></li>
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#about-us">About Us</a></li>
         <li> <a href="#our-services">Services</a></li>
-        <li><a href="#">Team</a></li>
-        <li> <a href="#">Clinic</a></li>
-        <li><a href="#">Smile Gallery</a></li>
+        <li><a href="#team">Team</a></li>
+        <li> <a href="#clinic">Clinic</a></li>
+        <li><a href="#gallery">Smile Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
 <button onclick="toggleBurgerMenu()"><i class="fas fa-bars"></i></button>
       
     </nav>
-
+ 
 
   </header>
 
@@ -305,7 +307,7 @@
       </article>
     </section>
 
-    <section class="team-page">
+    <section  id="team" class="team-page">
       <h1>OUR DENTAL TEAM</h1>
       <article>
         <p>Your healthy smile and teeth are only as strong as the dedicated
@@ -434,7 +436,7 @@
       </article>
     </section>
 
-    <section class="our-tehnology-page">
+    <section id="clinic" class="our-tehnology-page">
       <h1>OUR CLINIC TECHNOLOGY</h1>
       <article class="our-tehnology-page__main-article">
         <p>One Dental Clinic is fully equipped with the
@@ -674,7 +676,7 @@
       </article>
     </section>
 
-    <section>
+    <section id="gallery"> 
 
       <h1>SMILE GALLERY</h1>
       <article>
@@ -750,7 +752,7 @@
       </article>
     </section>
 
-    <section class="contact-page">
+    <section  id="contact" class="contact-page">
       <h1>WE AWAIT YOU WITH A SMILE!</h1>
 
 
@@ -817,7 +819,6 @@
   </footer>
 <script src="./Assets/Javascript/burger-menu.js"></script>
 
-  <script type="text/javascript" src="./Assets/Javascript/burger-menu-script.js"></script>
 
   <script src="./Assets/Javascript/testimonials.js"></script>
 

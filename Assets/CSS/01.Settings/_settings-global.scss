@@ -1,7 +1,10 @@
 *,
 *::before,
-*::after{
+*::after
+{
 box-sizing: inherit;
+
+
 }
 
 body
@@ -12,4 +15,6 @@ body
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
+  
+
 }
