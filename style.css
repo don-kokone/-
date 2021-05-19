@@ -475,21 +475,28 @@ img {
   border-bottom: 1px solid #ed682e;
 }
 
+@media only screen and (min-width: 991px) {
+  .c-header {
+    border-bottom: none;
+    position: static;
+  }
+}
+
 .u-margin--standart {
   margin-left: 0.6rem;
   margin-right: 0.6rem;
 }
 
-.o-home-page {
+.home-page {
   margin-top: 5rem;
 }
 
-.o-home-page p {
+.home-page p {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.o-home-page .o-home-page__main-article {
+.home-page .home-page__main-article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -507,7 +514,7 @@ img {
   margin-top: 2rem;
 }
 
-.o-home-page .o-home-page__main-article::before {
+.home-page .home-page__main-article::before {
   content: '';
   position: absolute;
   bottom: 0;
@@ -519,7 +526,7 @@ img {
   height: 100%;
 }
 
-.o-home-page .o-home-page__main-article-image {
+.home-page .home-page__main-article-image {
   position: relative;
   height: 60vh;
   -o-object-fit: cover;
@@ -528,7 +535,7 @@ img {
   text-align: center;
 }
 
-.o-home-page .o-home-page__main-article .c-appointment-btn {
+.home-page .home-page__main-article .c-appointment-btn {
   position: absolute;
   bottom: 5%;
   left: 50%;
@@ -538,7 +545,7 @@ img {
   width: 15rem;
 }
 
-.o-home-page .o-home-page__main-article .c-testimonialContainer {
+.home-page .home-page__main-article .c-testimonialContainer {
   background-color: transparent;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,49 +570,51 @@ img {
   overflow-x: hidden;
 }
 
-.o-home-page .o-home-page__main-article .c-testimonialContainer h2,
-.o-home-page .o-home-page__main-article .c-testimonialContainer p {
+.home-page .home-page__main-article .c-testimonialContainer h2,
+.home-page .home-page__main-article .c-testimonialContainer p {
   color: white;
   text-align: center;
   margin: 1rem 0;
 }
 
-.o-home-page__secondary-article-image {
+.home-page__secondary-article-image {
   margin: 0 auto;
-  min-width: 150px;
-  max-width: 70%;
+  display: block;
+  max-width: 15rem;
+  width: 100%;
 }
 
 @media only screen and (min-width: 991px) {
-  .o-home-page__secondary-article {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 300px 1fr;
-        grid-template-columns: 300px 1fr;
-    -ms-grid-rows: 1fr;
-        grid-template-rows: 1fr;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin: 0 auto;
+  .home-page p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .home-page .home-page__secondary-article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
-.o-abous_us-page p, .o-abous_us-page h4, .o-abous_us-page li {
+.about_us-page p, .about_us-page h4, .about_us-page li {
   padding-right: 5%;
   padding-left: 5%;
 }
 
-.o-abous_us-page .o-abous_us-page__main-article {
+.about_us-page .about_us-page__main-article {
   padding-bottom: 40px;
 }
 
-.o-abous_us-page .o-abous_us-page__main-article .o-abous_us-page__secondary-article-grid {
+.about_us-page .about_us-page__main-article .about_us-page__secondary-article-grid {
   border-top: 1px solid #a4a4a4;
   padding-top: 40px;
 }
 
-.o-abous_us-page .o-abous_us-page__main-article .o-abous_us-page__secondary-article--img-prize {
+.about_us-page .about_us-page__main-article .about_us-page__secondary-article--img-prize {
   display: block;
   min-width: 100px;
   max-width: 200px;
@@ -617,11 +626,11 @@ img {
   margin-right: auto;
 }
 
-.o-abous_us-page .o-abous_us-page__secondary-article .o-abous_us-page__secondary-article--text-over-img {
+.about_us-page .about_us-page__secondary-article .about_us-page__secondary-article--text-over-img {
   position: relative;
 }
 
-.o-abous_us-page .o-abous_us-page__secondary-article .o-abous_us-page__secondary-article--text-over-img .text-box {
+.about_us-page .about_us-page__secondary-article .about_us-page__secondary-article--text-over-img .text-box {
   position: absolute;
   color: #ed682e;
   text-align: center;
@@ -630,11 +639,11 @@ img {
 }
 
 @media only screen and (min-width: 991px) {
-  .o-abous_us-page__main-article {
+  .about_us-page__main-article {
     width: 90%;
     margin: 0 auto;
   }
-  .o-abous_us-page__secondary-article-grid {
+  .about_us-page__secondary-article-grid {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 300px 1fr;
@@ -643,17 +652,17 @@ img {
         -ms-flex-align: center;
             align-items: center;
   }
-  .o-abous_us-page__secondary-article--img-prize {
+  .about_us-page__secondary-article--img-prize {
     max-width: 200px;
   }
 }
 
-.o-our_services-page__main-article p {
+.our_services-page__main-article p {
   padding-left: 5%;
   padding-right: 5%;
 }
 
-.o-our_services-page__main-article p:last-child {
+.our_services-page__main-article p:last-child {
   margin: 1rem 0 2rem 0;
   color: #1a4485;
 }
@@ -662,43 +671,22 @@ img {
   margin-bottom: 2rem;
 }
 
-.o-our_services-page__secondary-article--colorful-div {
+.our_services-page__secondary-article--colorful-div {
   background-color: #333333;
   text-align: center;
   padding: 40px 0;
 }
 
-.o-our_services-page__secondary-article--colorful-div h2 {
+.our_services-page__secondary-article--colorful-div h2 {
   color: white;
   margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 991px) {
-  .o-our_services-page__main-article {
+  .our_services-page__main-article {
     width: 90%;
     margin: 0 auto;
   }
-}
-
-.our-tehnology-page__main-article p {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-.o-img-panel::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #555;
-  z-index: 2;
-  opacity: 0.4;
-  width: 100%;
-  height: 100%;
-}
-
-.o-img-panel__text {
-  z-index: 5;
 }
 
 .team-page p {
@@ -728,6 +716,27 @@ img {
     max-width: 20rem;
     margin: 1rem;
   }
+}
+
+.our-tehnology-page__main-article p {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.o-img-panel::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #555;
+  z-index: 2;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+}
+
+.o-img-panel__text {
+  z-index: 5;
 }
 
 .contact-page {

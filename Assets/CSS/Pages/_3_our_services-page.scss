@@ -1,11 +1,11 @@
+.our_services-page__main-article {
 
-.o-our_services-page__main-article{
-
-  p{
+  p {
     padding-left: 5%;
     padding-right: 5%;
   }
-  p:last-child{
+
+  p:last-child {
     margin: 1rem 0 2rem 0;
     color: $color-blue;
   }
@@ -13,12 +13,12 @@
 
 
 
-.panel-group{
+.panel-group {
   margin-bottom: 2rem;
 }
 
 
-.o-our_services-page__secondary-article--colorful-div {
+.our_services-page__secondary-article--colorful-div {
   background-color: #333333;
   text-align: center;
   padding: 40px 0;
@@ -28,13 +28,11 @@
     margin-bottom: 2rem;
   }
 
-  
-
 }
 
 @media only screen and (min-width: 991px) {
 
-  .o-our_services-page__main-article {
+  .our_services-page__main-article {
     width: 90%;
     margin: 0 auto;
   }
