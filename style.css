@@ -739,6 +739,37 @@ img {
   z-index: 5;
 }
 
+.primary-heading,
+.secondary-heading {
+  text-align: left;
+  margin: 2rem 0 2rem 5%;
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 991px) {
+  .gallery {
+    width: 90%;
+    margin: 0 auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
 .contact-page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -755,20 +786,25 @@ img {
   padding-right: 5%;
 }
 
+.contact-page h1 {
+  margin: 3rem auto;
+}
+
+.contact-page h4 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
 .contact-page .contact-page__map {
-  height: 70%;
+  height: 25rem;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .contact-page .coordinates {
   margin-top: 2rem;
-}
-
-.contact-page .coordinates h4 {
-  font-size: 1.1rem;
-  font-weight: bold;
 }
 
 .contact-page .coordinates span {
@@ -796,10 +832,11 @@ img {
   text-align: left;
   margin-top: 1rem;
   margin-bottom: 0.2rem;
-  color: #555;
+  color: #a4a4a4;
 }
 
-.contact-page .appointment-form input, .contact-page .appointment-form textarea {
+.contact-page .appointment-form input,
+.contact-page .appointment-form textarea {
   background-color: #F5F6F9;
   border: none;
   border-radius: 2px;
@@ -822,5 +859,47 @@ img {
   border-radius: 5px;
   text-transform: uppercase;
   font-weight: bolder;
+}
+
+@media only screen and (min-width: 991px) {
+  .contact-page-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .contact-page-wrapper .contact-page__info {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin: 0 2rem;
+  }
+  .contact-page-wrapper .contact-page__info address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 /*# sourceMappingURL=style.css.map */

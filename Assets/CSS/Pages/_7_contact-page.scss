@@ -1,25 +1,32 @@
 .contact-page {
-    
+
+    h1{
+        margin: 3rem auto;
+
+    }
+    h4 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
     @include flex-column;
     flex: 1 1 auto;
     margin-bottom: 2rem;
     padding-left: 5%;
     padding-right: 5%;
 
-   .contact-page__map {
-        height: 70%;
+    .contact-page__map {
+        height: 25rem;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
+        display: block;
+    
     }
 
     .coordinates {
         margin-top: 2rem;
 
-        h4 {
-            font-size: 1.1rem;
-            font-weight: bold;
-        }
         span {
             font-weight: bolder;
         }
@@ -29,25 +36,30 @@
         }
     }
 
+
     .appointment-form {
         @include flex-column;
         flex: 1 1 auto;
+
 
         label {
             text-align: left;
             margin-top: 1rem;
             margin-bottom: 0.2rem;
-            color: $color-darker-grey;
+            color: $color-grey;
+
         }
 
-        input, textarea {
+        input,
+        textarea {
             background-color: $color-light-grey;
             border: none;
             border-radius: 2px;
             padding: 0.7rem;
+
         }
 
-  
+
         input:focus {
             outline: none;
         }
@@ -64,4 +76,36 @@
             font-weight: bolder;
         }
     }
+
+}
+
+@media only screen and (min-width: 991px) {
+
+    .contact-page-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-content: center;
+        align-items: baseline;
+
+
+        .contact-page__info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: baseline;
+            margin: 0 2rem;
+
+            address {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+
+        .appointment-form {}
+
+    }
+
 }

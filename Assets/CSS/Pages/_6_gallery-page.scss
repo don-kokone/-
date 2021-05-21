@@ -1,0 +1,31 @@
+
+.primary-heading,
+.secondary-heading {
+text-align: left;
+margin: 2rem 0 2rem 5%;
+
+}
+
+
+@media only screen and (min-width: 768px) {
+    .gallery {
+       width: 90%;
+       margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+
+     
+    }
+}
+
+@media only screen and (min-width: 991px) {
+
+    .gallery {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+       
+    }
+}
