@@ -1,8 +1,7 @@
 .service-container {
 
-    max-width: 600px;
     margin: 0 auto;
-    width: 95vw;
+width: 90%;
 
 
     .service-title {
@@ -19,10 +18,11 @@
         position: relative;
         overflow: hidden;
         transition: 0.3s ease;
-       margin-top: 0;
+        max-width: 55rem;
+        width: auto;
+    
+       
     }
-
-
 
     .service-text {
         display: none;
@@ -65,4 +65,11 @@
         display: none;
     }
 
+}
+
+@media only screen and (min-width: 991px) {
+
+    .service{
+        min-width: 31rem ;
+    }
 }

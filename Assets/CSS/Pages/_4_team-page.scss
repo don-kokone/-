@@ -7,17 +7,24 @@
 }
 
 
-@media only screen and (min-width: 700px) {
-    .team {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-self: center;
-        align-items: center;
+@media only screen and (min-width: 768px) {
 
-        .c-card{
-            max-width: 20rem;
-            margin: 1rem;
-        }
+    .team{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 991px) {
+
+    .team{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
     }
 }

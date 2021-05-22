@@ -21,7 +21,25 @@
 z-index: 5;
 }
 
+
+@media only screen and (min-width: 768px) {
+
+    .our-tehnology-page__secondary-article{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
 @media only screen and (min-width: 991px) {
 
-    
+    .our-tehnology-page__secondary-article{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
 }
