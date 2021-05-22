@@ -216,7 +216,7 @@ img {
   text-transform: uppercase;
   font-weight: 400;
   color: #a4a4a4;
-  margin: 0 2rem 0 0;
+  margin: 0 1rem 0 0;
 }
 
 .service-container .service {
@@ -254,11 +254,9 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0;
   position: absolute;
   top: 0;
   right: 1rem;
-  width: 3rem;
   height: 3rem;
 }
 
@@ -276,12 +274,6 @@ img {
 
 .service-container .service.active .service-toggle .fa-chevron-down {
   display: none;
-}
-
-@media only screen and (min-width: 991px) {
-  .service {
-    min-width: 31rem;
-  }
 }
 
 .c-card {
@@ -691,17 +683,13 @@ img {
 @media only screen and (min-width: 991px) {
   .our_services-page__secondary-article {
     margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 

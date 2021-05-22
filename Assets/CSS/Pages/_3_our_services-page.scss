@@ -34,9 +34,9 @@
   .our_services-page__secondary-article{
 
 margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: baseline;
+    
   }
 }
